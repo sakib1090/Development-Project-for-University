@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DIU AI Tools • Contact</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-warning" href="index.html">DIU AI Tools</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Categories</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="text-ai.html">Text & Conversational</a></li>
+            <li><a class="dropdown-item" href="image-ai.html">Image & Design</a></li>
+            <li><a class="dropdown-item" href="audio-ai.html">Speech & Audio</a></li>
+            <li><a class="dropdown-item" href="video-ai.html">Video & Motion</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="categories.html">All Categories</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        <li class="nav-item ms-2"><a class="btn btn-warning text-dark" href="register.html">Register</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="py-5 gradient-hero text-white text-center">
+  <div class="container">
+    <h1 class="display-5 fw-bold">Contact Us</h1>
+    <p class="lead mb-0">Questions, suggestions, or tool submissions — send us a message.</p>
+  </div>
+</section>
+
+<main class="py-5">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <div class="card shadow-sm p-4">
+          <h5>Send a Message</h5>
+          <form id="contactForm" class="mt-3">
+            <div class="mb-3">
+              <label class="form-label">Full name</label>
+              <input id="cname" class="form-control" type="text" placeholder="Your name">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input id="cemail" class="form-control" type="email" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Message</label>
+              <textarea id="cmessage" class="form-control" rows="5" placeholder="How can we help?"></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Send</button>
+            <div id="contactAlert" class="mt-3" style="display:none;"></div>
+          </form>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="card shadow-sm p-4">
+          <h5>Office & Support</h5>
+          <p class="small text-muted mb-1">DIU AI Tools Platform</p>
+          <p class="small text-muted mb-3">Daffodil International University — Student Project</p>
+          <ul class="list-unstyled small">
+            <li><strong>Email:</strong> support@diu-ai-tools.example</li>
+            <li><strong>Phone:</strong> +880 1700 000000</li>
+            <li><strong>Location:</strong> Dhaka, Bangladesh</li>
+          </ul>
+          <hr>
+          <h6>How to submit a tool</h6>
+          <p class="small text-muted">Register and use the submission form on your profile (coming soon). For now, send details via the contact form.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-dark text-white text-center py-3">
+  <div class="container">© 2025 DIU AI Tools</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
