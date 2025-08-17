@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI Tools Hub • Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-warning" href="index.html">AI Tools Hub</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="catDropdown" role="button" data-bs-toggle="dropdown">Categories</a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="catDropdown">
+            <li><a class="dropdown-item" href="text-ai.html">Text & Conversational</a></li>
+            <li><a class="dropdown-item" href="image-ai.html">Image & Design</a></li>
+            <li><a class="dropdown-item" href="audio-ai.html">Speech & Audio</a></li>
+            <li><a class="dropdown-item" href="video-ai.html">Video & Motion</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="categories.html">All Categories</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item ms-2"><a class="btn btn-warning text-dark px-3" href="register.html">Get Started</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- CAROUSEL / SLIDER -->
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://images.unsplash.com/photo-1542831371-d531d36971e6?auto=format&fit=crop&w=1600&q=80" class="d-block w-100" alt="AI neural network" style="height: 400px; object-fit: cover;">
+      <div class="carousel-caption d-none d-md-block text-start" style="background:rgba(0,0,0,0.4); border-radius:8px;">
+        <h1 class="display-5">Discover AI Neural Networks</h1>
+        <p class="lead">Explore the foundations of AI technology and neural computing.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1600&q=80" class="d-block w-100" alt="Artificial intelligence concept" style="height: 400px; object-fit: cover;">
+      <div class="carousel-caption d-none d-md-block" style="background:rgba(0,0,0,0.4); border-radius:8px;">
+        <h1 class="display-5">Build Faster with AI</h1>
+        <p class="lead">Code completion, image generation, speech tools, and analytics.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1518773553398-650c184e0bb3?auto=format&fit=crop&w=1600&q=80" class="d-block w-100" alt="Robot technology" style="height: 400px; object-fit: cover;">
+      <div class="carousel-caption d-none d-md-block text-end" style="background:rgba(0,0,0,0.4); border-radius:8px;">
+        <h1 class="display-5">Learn & Share</h1>
+        <p class="lead">Register to submit tools, save favorites, and get updates.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=80" class="d-block w-100" alt="AI concept digital brain" style="height: 400px; object-fit: cover;">
+      <div class="carousel-caption d-none d-md-block text-center" style="background:rgba(0,0,0,0.4); border-radius:8px;">
+        <h1 class="display-5">Explore AI Concepts</h1>
+        <p class="lead">Innovations in AI technology shaping the future.</p>
+      </div>
+    </div>
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  </button>
+</div>
+
+<!-- INTRO -->
+<section class="py-5 text-center">
+  <div class="container">
+    <h2 class="fw-bold mb-3">Your AI Tools Hub</h2>
+    <p class="lead text-muted">Find, compare and adopt AI tools across Text, Image, Audio, and Video — with practical notes from students and mentors.</p>
+    <a href="register.html" class="btn btn-warning btn-lg mt-2">Get Started</a>
+  </div>
+</section>
+
+<!-- FEATURED CARDS -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h3 class="mb-4 text-center">Featured Categories</h3>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3">
+        <a class="card shadow-sm h-100 text-decoration-none text-dark hover-lift" href="text-ai.html">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Text AI" style="height: 250px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">Text & Conversational</h5>
+            <p class="card-text small text-muted">Chatbots, summarizers, translators, Q&A…</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <a class="card shadow-sm h-100 text-decoration-none text-dark hover-lift" href="image-ai.html">
+          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Image AI" style="height: 250px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">Image & Design</h5>
+            <p class="card-text small text-muted">Text-to-image, editing, style transfer…</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <a class="card shadow-sm h-100 text-decoration-none text-dark hover-lift" href="audio-ai.html">
+          <img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Audio AI" style="height: 250px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">Speech & Audio</h5>
+            <p class="card-text small text-muted">STT, TTS, voice cloning, noise cleanup…</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <a class="card shadow-sm h-100 text-decoration-none text-dark hover-lift" href="video-ai.html">
+          <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Video AI" style="height: 250px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">Video & Motion</h5>
+            <p class="card-text small text-muted">Auto-editing, generation, motion graphics…</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <a href="categories.html" class="btn btn-outline-dark">View All Categories</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center py-3 mt-5">
+  <div class="container">
+    <p class="mb-0">© 2025 DIU AI Tools • Built for learning & demos</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
