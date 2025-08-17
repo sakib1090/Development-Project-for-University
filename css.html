@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rakibul Hasan Shoan | Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f2f5;
+      color: #333;
+    }
+    header {
+      background: #0a192f;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid #64ffda;
+      margin-top: 20px;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #0a192f;
+      border-left: 5px solid #64ffda;
+      padding-left: 10px;
+      margin-bottom: 20px;
+    }
+    /* Skills Section */
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .skill-card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      width: 200px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .skill-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(100, 255, 218, 0.5);
+    }
+    .skill-card i {
+      font-size: 40px;
+      color: #64ffda;
+      margin-bottom: 10px;
+    }
+    /* Projects Section */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .project-card {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      border-left: 5px solid #64ffda;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(100, 255, 218, 0.5);
+    }
+    .project-card a {
+      text-decoration: none;
+      color: #0a192f;
+      font-weight: bold;
+    }
+    .project-card p {
+      margin-top: 10px;
+      color: #555;
+    }
+    /* Education Section */
+    .education-timeline {
+      position: relative;
+      padding-left: 30px;
+      border-left: 3px solid #64ffda;
+    }
+    .education-entry {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      position: relative;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .education-entry::before {
+      content: '';
+      position: absolute;
+      left: -13px;
+      top: 20px;
+      background: #64ffda;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+    }
+    .education-entry:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(100, 255, 218, 0.5);
+    }
+    /* Contact Section */
+    .contact-card {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .contact-card a {
+      color: #0a192f;
+      text-decoration: none;
+      display: inline-block;
+      margin: 10px;
+      transition: color 0.3s;
+    }
+    .contact-card a:hover {
+      color: #64ffda;
+    }
+    .contact-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(100, 255, 218, 0.5);
+    }
+    footer {
+      background: #0a192f;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Rakibul Hasan Shoan</h1>
+    <p>Software Engineering Student | Aspiring ML Engineer</p>
+    <p>Daffodil International University (3rd Year)</p>
+    <img src="C:\Users\ROG\Documents\shaon.jpg.JPG" alt="Rakibul Hasan Shoan" />
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I am a lively and enthusiastic student exploring the world of Artificial Intelligence and Machine Learning.
+      My fascination with AI started with J.A.R.V.I.S. from Iron Man, and now I actively build and study AI-powered tools.
+      I enjoy solving real-world problems through code and am always eager to learn and collaborate.
+    </p>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill-card">
+        <i class="fab fa-python"></i>
+        <h3>Python & ML</h3>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-brain"></i>
+        <h3>Deep Learning</h3>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-language"></i>
+        <h3>NLP & Transformers</h3>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-robot"></i>
+        <h3>Generative AI</h3>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Recent Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <a href="https://github.com/shaon6009/LLM-Gen-Ai" target="_blank">LLM-Gen-Ai</a>
+        <p>Exploring Large Language Models and Generative AI applications.</p>
+      </div>
+      <div class="project-card">
+        <a href="https://github.com/shaon6009/Deep-Learning-Projects" target="_blank">Deep-Learning-Projects</a>
+        <p>Collection of projects focusing on deep learning architectures.</p>
+      </div>
+      <div class="project-card">
+        <a href="https://github.com/shaon6009/Machine-learning-projects" target="_blank">Machine-learning-projects</a>
+        <p>Various machine learning projects solving real-world problems.</p>
+      </div>
+      <div class="project-card">
+        <a href="https://github.com/shaon6009/NLP-and-Transformer" target="_blank">NLP-and-Transformer</a>
+        <p>Natural Language Processing projects utilizing transformer models.</p>
+      </div>
+      <div class="project-card">
+        <a href="https://github.com/shaon6009/Number-plate-detection-All-Approaches-" target="_blank">Number-plate-detection</a>
+        <p>Implementations of various approaches for number plate detection.</p>
+      </div>
+      <div class="project-card">
+        <a href="https://github.com/shaonproject/fca-shaon-project" target="_blank">fca-shaon-project</a>
+        <p>Facebook Messenger chatbot API project, redeveloped for enhanced functionality.</p>
+      </div>
+      <div class="project-card">
+        <a href="https://github.com/shaon6009/Audio-Search-ChromaDB" target="_blank">Audio Search with ChromaDB</a>
+        <p>Built an audio retrieval system using ChromaDB and CLAP Embeddings for efficient querying and real-time processing of audio data. Users can search audio files by keywords like "dog barking" or "rain sounds" and get highly accurate results.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Educational Background</h2>
+    <div class="education-timeline">
+      <div class="education-entry">
+        <h3>BSc in Software Engineering</h3>
+        <p><strong>Institute:</strong> Daffodil International University</p>
+        <p><strong>Year:</strong> 2022 - Present</p>
+      </div>
+      <div class="education-entry">
+        <h3>HSC</h3>
+        <p><strong>Institute:</strong> Bir Srestha Noor Mohammad Public College</p>
+        <p><strong>Year:</strong> 2019 - 2021</p>
+      </div>
+      <div class="education-entry">
+        <h3>SSC</h3>
+        <p><strong>Institute:</strong> Shahid Abdur Rab Serniabat Govt. School</p>
+        <p><strong>Year:</strong> 2017 - 2019</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-card">
+      <p><strong>Email:</strong><br>
+        <a href="mailto:shaonrakibul0@gmail.com">shaonrakibul0@gmail.com</a>
+      </p>
+      <h3>Find Me Online</h3>
+      <p>
+        <a href="https://www.linkedin.com/in/md-rakibul-hasan-shoan" target="_blank">🔗 LinkedIn</a><br>
+        <a href="https://www.instagram.com/rakibul_hasan_sha0n" target="_blank">📸 Instagram</a><br>
+        <a href="https://www.kaggle.com/rakibulhasanshaon69" target="_blank">📊 Kaggle</a><br>
+        <a href="https://www.facebook.com/md.rakibulhasanshoan" target="_blank">📘 Facebook</a>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Rakibul Hasan Shoan. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
